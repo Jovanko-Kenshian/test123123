@@ -48,7 +48,7 @@ button.addEventListener("click", (event) => {
 
 document.getElementById("searchBar").addEventListener("input", function() {
     let filter = this.value.toLowerCase();
-    let cards = document.querySelectorAll("#container .infobox");
+    let cards = document.querySelectorAll("#container #searchValue");
     cards.forEach(card => {
         card.style.display = card.textContent.toLowerCase().includes(filter) ? "inline-block" : "none";
     });
