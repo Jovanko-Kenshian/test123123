@@ -31,8 +31,8 @@ function onloadFunction() {
     let arr = [];
 
     cards.forEach(card => {
-	let val_name_card = card.querySelector(".searchValue").textContent.toLowerCase().replace("'s ","")
-	arr.push(val_name_card)
+  let counter_name = card.querySelector(".counterCheck").textContent.toLowerCase().replace("'s ","");
+	arr.push(counter_name)
     });
     let length_fin = [...new Set(arr)].length
     
@@ -66,10 +66,11 @@ document.getElementById("searchBar").addEventListener("input", function() {
     let arr = [];
     if(filter != ""){
        cards.forEach(card => {
-	   let val_name_card = card.querySelector(".searchValue").textContent.toLowerCase().replace("'s ","")
+	   let val_name_card = card.querySelector(".searchValue").textContent.toLowerCase().replace("'s ","");
+     let counter_name = card.querySelector(".counterCheck").textContent.toLowerCase().replace("'s ","");
            card.style.display = val_name_card.includes(filter) ? "" : "none";
 	   if (val_name_card.includes(filter)){
-	      arr.push(val_name_card)
+	      arr.push(counter_name)
 	  }
    
        });
@@ -218,14 +219,14 @@ button {
 </div>
 <br><br>
 
-<h3>Registered Pokemon: <font color="77dd77"><span id="counter"></span></font></h3><br>
+<h3>Unique Pokemon Registered: <font color="77dd77"><span id="counter"></span></font></h3><br>
 
 <div id = "container">
 
 <span class="infobox" style="width: 100%"><div style="width: 510px" id="wrap"><div style="display: inline-block; width: 123px" id="wrap">
 <b>#0666</b>
 </div><div style="display: inline-block; width: 373px" id="wrap">
-<b><strong style="color: #2884c6">bouquets</strong></b><b class="searchValue">'s Vivillon-Marine ★</b></div>
+<b><strong class="searchValue" style="color: #2884c6">bouquets</strong></b><b class="counterCheck"">'s Vivillon-Marine ★</b></div>
 <img src="//play.pokemonshowdown.com/sprites/ani-shiny/vivillon-marine.gif">
 <div style="width: 500px" id="wrap">
 <div style="display: inline-block ; background: linear-gradient(#c1db70,#96b82e) ; border: 1px solid #68a ; border-radius: 5px ; width: 75px ; padding: 1px ; color: #ffffff ; text-shadow: 1px 1px 1px #333 ; text-align: center"><b>Bug</b></div>
@@ -242,7 +243,7 @@ button {
 <span class="infobox" style="width: 100%"><div style="width: 510px" id="wrap"><div style="display: inline-block; width: 123px" id="wrap">
 <b>#0666</b>
 </div><div style="display: inline-block; width: 373px" id="wrap">
-<b><strong style="color: #c8101c">corsages</strong></b><b class="searchValue">'s Vivillon-Pokeball δ ★</b></div>
+<b><strong class="searchValue" style="color: #c8101c">corsages</strong></b><b class="counterCheck"">'s Vivillon-Pokeball δ ★</b></div>
 <img src="//play.pokemonshowdown.com/sprites/ani-shiny/vivillon-pokeball.gif">
 <div style="width: 500px" id="wrap">
 <div style="display: inline-block ; background: linear-gradient(#c1db70,#96b82e) ; border: 1px solid #68a ; border-radius: 5px ; width: 75px ; padding: 1px ; color: #ffffff ; text-shadow: 1px 1px 1px #333 ; text-align: center"><b>Bug</b></div>
@@ -257,7 +258,7 @@ button {
 <span class="infobox" style="width: 100%"><div style="width: 510px" id="wrap"><div style="display: inline-block; width: 123px" id="wrap">
 <b>#0666</b>
 </div><div style="display: inline-block; width: 373px" id="wrap">
-<b><strong style="color: #a99515">florally</strong></b><b class="searchValue">'s Vivillon-Icy Snow ★</b></div>
+<b><strong class="searchValue" style="color: #a99515">florally</strong></b><b class="counterCheck"">'s Vivillon-Icy Snow ★</b></div>
 <img src="//play.pokemonshowdown.com/sprites/ani-shiny/vivillon-icysnow.gif">
 <div style="width: 500px" id="wrap">
 <div style="display: inline-block ; background: linear-gradient(#c1db70,#96b82e) ; border: 1px solid #68a ; border-radius: 5px ; width: 100px ; padding: 1px ; color: #ffffff ; text-shadow: 1px 1px 1px #333 ; text-align: center"><b>Bug</b></div>
@@ -270,14 +271,14 @@ button {
 <span class="infobox" style="width: 100%"><div style="width: 510px" id="wrap"><div style="display: inline-block; width: 123px" id="wrap">
 <b>#0666</b>
 </div><div style="display: inline-block; width: 373px" id="wrap">
-<b><strong style="color: #a88515">bouquets</strong></b><b class="searchValue">'s Vivillon-Icy Snow ★</b></div>
+<b><strong class="searchValue" class= style="color: #2884c6">bouquets</strong></b><b class="counterCheck"">'s Vivillon-Icy Snow ★</b></div>
 <img src="//play.pokemonshowdown.com/sprites/ani-shiny/vivillon-icysnow.gif">
 <div style="width: 500px" id="wrap">
 <div style="display: inline-block ; background: linear-gradient(#c1db70,#96b82e) ; border: 1px solid #68a ; border-radius: 5px ; width: 100px ; padding: 1px ; color: #ffffff ; text-shadow: 1px 1px 1px #333 ; text-align: center"><b>Bug</b></div>
 </div><div style="display: inline-block; width: 123px" id="wrap">
 <b><a style="text-decoration:none; color: silver" href="https://rentry.co/project-bouquets">Screenshot</a></b>
 </div><div style="display: inline-block; width: 373px" id="wrap">
-<b>played on 2025-03-03</b>
+<b>played on 2025-04-04</b>
 </div></div><br><br></span>
 
 
